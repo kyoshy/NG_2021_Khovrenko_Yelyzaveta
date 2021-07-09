@@ -7,14 +7,12 @@ int main()
     cout << "Enter your slary: " << endl;
     int pay = 0;
     cin >> pay;
-    int marker = 0;
     if (pay>999999)
     {
         cout << "You are millionaire";
-        marker ++;
 
     }
-    if (marker < 1)
+    if (pay<1000000)
     {
         if (pay>1000)
         {
