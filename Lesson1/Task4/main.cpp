@@ -7,11 +7,6 @@ int main()
     cout << "Enter your slary: " << endl;
     int pay = 0;
     cin >> pay;
-    if (pay>999999)
-    {
-        cout << "You are millionaire";
-
-    }
     if (pay<1000000)
     {
         if (pay>1000)
@@ -22,6 +17,11 @@ int main()
         {
             cout << "Work harder";
         }
+    }
+    if (pay>999999)
+    {
+        cout << "You are millionaire";
+
     }
     cout << ", but you're good!";
     return 0;
