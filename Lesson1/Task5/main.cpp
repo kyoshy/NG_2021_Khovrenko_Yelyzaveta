@@ -19,14 +19,18 @@ int main()
     cout << "Result: ";
     switch (third)
     {
-    case 1: cout << first+second;
-    break;
-    case 2: cout << first-second;
-    break;
-    case 3: cout << first*second;
-    break;
-    case 4: cout << first/second;
-    break;
+    case 1:
+        cout << first+second;
+        break;
+    case 2:
+        cout << first-second;
+        break;
+    case 3:
+        cout << first*second;
+        break;
+    case 4:
+        cout << first/second;
+        break;
     }
     return 0;
 }
