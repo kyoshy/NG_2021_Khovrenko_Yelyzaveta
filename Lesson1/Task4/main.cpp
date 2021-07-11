@@ -13,17 +13,17 @@ int main()
         {
             cout << "Cool";
         }
+        if (pay>999999)
+        {
+            cout << "You are millionaire";
+        }
     }
     if (pay<1001)
     {
         cout << "Work harder";
     }
 
-    if (pay>999999)
-    {
-        cout << "You are millionaire";
 
-    }
     cout << ", but you're good!";
     return 0;
 }
