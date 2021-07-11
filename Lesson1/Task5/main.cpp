@@ -18,7 +18,7 @@ int main()
     {
         cout << "Select the command: ";
         cin >> third;
-    }while (third>4);
+    }while (third > 4 || third < 1);
     cout << "Result: ";
     switch (third)
     {
