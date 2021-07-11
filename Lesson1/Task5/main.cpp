@@ -14,8 +14,11 @@ int main()
          << "3 - multiply" << endl
          << "4 - divide" << endl;
     int third = 0;
-    cout << "Select the command: ";
-    cin >> third;
+    do
+    {
+        cout << "Select the command: ";
+        cin >> third;
+    }while (third>4);
     cout << "Result: ";
     switch (third)
     {
