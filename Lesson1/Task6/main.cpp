@@ -16,15 +16,6 @@ int main()
          << "Введите номер варианта: " << endl;
     int var = 0;
     cin >> var;
-    /*if (var > 3 || var < 1)
-    {
-        do
-        {
-            cout << "Такого варинта нет!" << endl
-                 << "Введите номер варианта: " << endl;
-            cin >> var;
-        }while(var > 3 || var < 1);
-    }*/
     switch (var)
     {
         case 1:
