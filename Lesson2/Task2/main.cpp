@@ -12,7 +12,10 @@ int main()
     }while (number < 0);
     for (int i = 0; i <= number; i++)
     {
-        cout << i << " ";
+        if (i != number)
+            cout << i << ", ";
+        else
+            cout << i;
     }
     return 0;
 }
