@@ -11,44 +11,44 @@ int main()
         cin >> side;
     }while (side <= 0);
     cout << endl;
-    for (int i = 1; i <= side; i++)
+    for (int row = 1; row <= side; row++)
     {
-        for (int j = 0; j < i ; j++)
+        for (int column = 0; column < row ; column++)
         {
             cout << "* ";
         }
         cout << endl;
     }
     cout << endl;
-    for (int i = side; i >= 1; i--)
+    for (int row = side; row >= 1; row--)
     {
-        for (int j = 0; j < i; j++)
+        for (int column = 0; column < row; column++)
         {
             cout << "* ";
         }
         cout << endl;
     }
     cout << endl;
-    for (int i = 0; i < side; i++)
+    for (int row = 0; row < side; row++)
     {
-        for (int j = 0; j < i; j++)
+        for (int space = 0; space < row; space++)
         {
             cout << "  ";
         }
-        for (int j = side; j > i; j--)
+        for (int star = side; star > row; star--)
         {
             cout << "* ";
         }
         cout << endl;
     }
     cout << endl;
-    for (int i = 1; i <= side; i++)
+    for (int row = 1; row <= side; row++)
     {
-        for (int j = 0; j < side - i; j++)
+        for (int space = 0; space < side - row; space++)
         {
             cout << "  ";
         }
-        for (int j = 0; j < i; j++)
+        for (int star = 0; star < row; star++)
         {
             cout << "* ";
         }
