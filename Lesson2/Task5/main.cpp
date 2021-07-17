@@ -22,14 +22,10 @@ int main()
         {
             cout << "*";
         }
-        if (row > 1)
-            {
-
-                for (int right = 0; right < row - 1 ; right++)
-                {
-                    cout << "*";
-                }
-            }
+        for (int right = 0; right < row - 1 ; right++)
+        {
+            cout << "*";
+        }
         cout << endl;
     }
     for (int space = 0; space < tree; space++)
