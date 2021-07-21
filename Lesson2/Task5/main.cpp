@@ -14,15 +14,11 @@ int main()
     for (int row = 1; row <= tree; row++)
     {
         cout << " ";
-        for (int space = 0; space < tree - row; space++)
+        for (int space = 0; space < tree-row; space++)
         {
             cout << " ";
         }
-        for (int left = 0; left < row; left++)
-        {
-            cout << "*";
-        }
-        for (int right = 0; right < row - 1 ; right++)
+        for (int star = 0; star < row*2-1; star++)
         {
             cout << "*";
         }
