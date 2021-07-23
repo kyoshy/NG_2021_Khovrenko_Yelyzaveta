@@ -31,9 +31,15 @@ int main()
             cin >> money;
         }while (money < 0);
         cards[card-1] = money;
+        cout << "BALANCE" << endl;
+        for (int i = 0; i < 10; i++)
+        {
+            cout << cards[i] << "  ";
+        }
+        cout << endl;
         cout << "Enter 0 to continue or 1 to exit: ";
         cin >> command;
         cout << endl;
-    }while (command != 1);
+    }while (command != '1');
     return 0;
 }
