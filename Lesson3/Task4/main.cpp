@@ -27,6 +27,8 @@ int main()
                 {
                     cout << "Numbers should be odd! Try again" << endl;
                     cin >> numbers[enter];
+                    if (numbers[enter] == 0)
+                        break;
                 }while (numbers[enter]%2 == 0);
             }
         }
