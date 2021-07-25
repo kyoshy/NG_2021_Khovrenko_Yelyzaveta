@@ -31,12 +31,13 @@ int main()
             cin >> money;
         }while (money < 0);
         cards[card-1] = money;
-        cout << "BALANCE" << endl;
-        for (int i = 0; i < 10; i++)
+        cout << "BALANCE: ";
+        float summa = 0;
+        for (int sum = 0; sum < 10; sum++)
         {
-            cout << cards[i] << "  ";
+            summa += cards[sum];
         }
-        cout << endl;
+        cout << summa << endl;
         cout << "Enter 0 to continue or 1 to exit: ";
         cin >> command;
         cout << endl;
