@@ -5,9 +5,10 @@ using namespace std;
 int main()
 {
     int cards[10];
-    char command = 0;
+    int command = 0;
     int card = 0;
-    float money = 0;
+    int money = 0;
+    int summa = 0;
     for (int i = 0; i < 10; i++)
     {
         cards[i] = 0;
@@ -31,16 +32,11 @@ int main()
             cin >> money;
         }while (money < 0);
         cards[card-1] = money;
-        cout << "BALANCE: ";
-        float summa = 0;
-        for (int sum = 0; sum < 10; sum++)
-        {
-            summa += cards[sum];
-        }
-        cout << summa << endl;
+        summa += money;
+        cout << "BALANCE: " << summa << endl;
         cout << "Enter 0 to continue or 1 to exit: ";
         cin >> command;
         cout << endl;
-    }while (command != '1');
+    }while (command != 1);
     return 0;
 }
