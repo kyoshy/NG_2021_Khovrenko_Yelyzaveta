@@ -11,25 +11,19 @@ int main()
         cin >> numbers[enter];
         if (numbers[enter] == 0)
             break;
-        if (enter >= 1)
+        if (enter >= 1) //check for even or odd numbers
         {
-            if (numbers[enter-1]%2 == 0 && numbers[enter]%2 != 0)
+            while (numbers[enter-1]%2 == 0 && numbers[enter]%2 != 0)
             {
-                do
-                {
-                    cout << "Numbers should be even! Try again" << endl;
-                    cin >> numbers[enter];
-                }while (numbers[enter]%2 != 0);
+                cout << "Numbers should be even! Try again" << endl;
+                cin >> numbers[enter];
             }
-            if (numbers[enter-1]%2 != 0 && numbers[enter]%2 == 0)
+            while (numbers[enter-1]%2 != 0 && numbers[enter]%2 == 0)
             {
-                do
-                {
-                    cout << "Numbers should be odd! Try again" << endl;
-                    cin >> numbers[enter];
-                    if (numbers[enter] == 0)
-                        break;
-                }while (numbers[enter]%2 == 0);
+                cout << "Numbers should be odd! Try again" << endl;
+                cin >> numbers[enter];
+                if (numbers[enter] == 0)
+                    break;
             }
         }
     }
@@ -39,28 +33,23 @@ int main()
     int largest = 0;
     for (int big = 0; big < 20; big++)
     {
-        int high = largest;
         if (numbers[big] == 0)
             break;
-        if (numbers[big+1] < numbers[big])
-            high = numbers[big];
-        if (high > largest)
-            largest = high;
+        if (largest < numbers[big])
+            largest = numbers[big];
     }
 
     for (int out = 0; out < 20; out++)
     {
         if (numbers[out] == 0)
             break;
-        cout << " ";
-        for (int space = 0; space < (largest/2) - (numbers[out]/2); space++)
+        for (int space = 0; space <= (largest/2) - (numbers[out]/2); space++)
         {
             cout << " ";
         }
-        while(numbers[out] > 0)
+        for (int star = 0; star < numbers[out]; star++)
         {
             cout << "*";
-            numbers[out]--;
         }
         cout << endl;
     }
