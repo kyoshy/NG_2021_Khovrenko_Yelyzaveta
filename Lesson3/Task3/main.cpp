@@ -18,11 +18,16 @@ int main()
         }
     }
 
-    int row = 0;
-    int stop = 0;
-    while (stop < 5)
+    // search for the largest number in the array
+    int largest = 0;
+    for (int big = 0; big < 5; big++)
     {
-        stop = 0;
+        if (largest < numbers[big])
+            largest = numbers[big];
+    }
+
+    for (int row = 0; row < largest; row++)
+    {
         cout << " ";
         for (int column = 0; column < 5; column++)
         {
@@ -33,11 +38,9 @@ int main()
             else
             {
                 cout << " ";
-                stop++;
             }
         }
         cout << endl;
-        row++;
     }
     return 0;
 }
