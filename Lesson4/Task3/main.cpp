@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    char str[100];
+    char str[100], big[100];
     cout << "Enter your string:" << endl;
     cin.getline(str, 100);
 
@@ -12,8 +12,8 @@ int main()
     {
         if (str[i] >= 'a' && str[i] <= 'z')
         {
-            str[i] -= 32;
-            cout << str[i];
+            big[i] = str[i] - 32;
+            cout << big[i];
         }
         else
             cout << str[i];
